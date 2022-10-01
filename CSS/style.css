@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Naviagtion Bar */
+#navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navigation::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar:Logo and Image */
+#logo {
+    margin: 3px 10px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 8px;
+}
+
+/* Navigation Bar:List styling */
+
+#navigation ul {
+    display: flex;
+}
+
+#navigation ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navigation ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 11px;
+    border-radius: 55px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navigation ul li a:hover {
+    color: rgb(112, 38, 229);
+    background-color: rgb(243, 236, 236);
+}
+
+/* HOME SECTION */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 421px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width:913px) {
+    #navigation ul li {
+        font-size: 0.9rem;
+    }
+
+    #contact #contact_box label {
+        font-size: 1.1rem;
+    }
+
+    #contact #contact_box input,
+    #contact_box textarea {
+        width: 90%;
+        padding: 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    #contact #contact_box form {
+        width: 50%;
+    }
+
+    #home {
+        height: 385px;
+        padding: 2px 28px;
+    }
+    
+}
+
+
+@media only screen and (max-width:503px) {
+    #client-section .h_primary {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media only screen and (max-width:328px) {
+
+    #foodService .box .h_secondary {
+        font-size: 1.1rem;
+    }
+
+    #foodService .box p {
+        font-size: 0.8rem;
+    }
+
+    #foodService .box img {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width:312px) {
+    #navigation ul li {
+        font-size: 0.8rem;
+    }
+
+    #navigation ul li a {
+        /* font-size: 0.8rem; */
+        padding: 0px 7px;
+    }
+
+    #home {
+        height: 390px;
+    }
+
+    #home .para {
+        font-size: 0.8rem;
+    }
+
+    #home .h_primary {
+        font-size: 1.6rem;
+    }
+
+    #home .btn {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width:303px) {
+
+    .services #foodService {
+        margin: 0px 22px;
+    }
+}
+
+@media only screen and (max-width:235px) {
+    #client-section .client .client_item img {
+        width: 80px
+    }
+}
+
+#home::before {
+    content: "";
+    background-color: rgb(208, 190, 237);
+    color: black;
+    height: 488px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* sevices section */
+
+#foodService {
+    margin: 0px 33px;
+    display: flex;
+}
+
+#foodService .box {
+
+    box-shadow: inset 2px 2px 2px rgb(110, 108, 108), inset 2px 2px 2px rgb(110, 108, 108);
+    background-color: rgb(208, 190, 237);
+    border-radius: 10px;
+    padding: 14px 12px;
+    margin: 2px 4px;
+    margin-bottom: 4px;
+}
+
+#foodService .box img {
+    height: 130px;
+    margin: auto;
+    display: block;
+}
+
+
+/* client section */
+#client-section {
+    height: 277px;
+    margin-top: 10px;
+}
+
+#client-section::before {
+    content: "";
+    background-color: rgb(208, 190, 237);
+    position: absolute;
+    height: 266px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.5;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client_item {
+    padding: 45px;
+}
+
+#client-section .client .client_item img {
+    height: 65px;
+
+}
+
+/* Contact section */
+#contact {
+    height: 481px;
+}
+
+#contact_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#contact::before {
+    content: "";
+    background-color: rgb(208, 190, 237);
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    z-index: -1;
+}
+
+#contact_box input,
+#contact_box textarea {
+    width: 84%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border: 2px solid rgb(132, 115, 158);
+    font-weight: bolder;
+
+}
+
+#contact_box form {
+    width: 40%;
+}
+
+#contact_box label {
+    font-size: 1.3rem;
+    margin: 10px 10px;
+}
+
+/* footer section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 14px 15px;
+}
+
+/* utility class */
+.h_primary {
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.h_secondary {
+    font-size: 1.5rem;
+    padding: 11px;
+}
+
+.btn {
+    padding: 10px 16px;
+    margin: 30px;
+    font-size: 1.0rem;
+    border-radius: 13px;
+    background-color: rgb(148, 118, 196);
+    color: whitesmoke;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(107, 79, 149);
+    background-color: rgb(254, 253, 255);
+    border: 3px solid rgb(132, 115, 158);
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+/* navigation section */
+#navigation {
+    flex-direction: column;
+}
+
+
+/* home section */
+
+#home .para {
+    font-size: 0.9rem;
+
+}
+
+/* services section */
+
+.services .h_primary {
+    font-size: 2rem;
+}
+
+#foodService {
+    flex-direction: column;
+}
+
+#foodService .box {
+    padding: 2px 2px;
+
+}
+
+#foodService .box img {
+    width: 100px;
+}
+
+#foodService .box p {
+    font-size: 0.9rem;
+}
+
+/* client section */
+
+.client {
+    flex-wrap: wrap;
+}
+
+#client-section .client .client_item {
+    padding: 3px 9px;
+}
+footer .center {
+    font-size:10px;
+}
+
+/* utility class */
+
+#home .h_primary {
+    font-size: 1.8rem;
+}
+
+#foodService .box .h_secondary {
+    font-size: 1.3rem;
+}
+
+#client-section .h_primary {
+    font-size: 2rem;
+}
+
+#contact .h_primary {
+    font-size: 1.8rem;
+}
